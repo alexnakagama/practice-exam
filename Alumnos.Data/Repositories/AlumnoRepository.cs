@@ -11,7 +11,7 @@ namespace Alumnos.Data.Repositories
 {
     public class AlumnoRepository(AlumnosDBContext _context)
     {
-        public async Task <List<AlumnoDTO>> GetAllAlumnos()
+        public async Task <List<AlumnoDTO>> GetAllAlumnosAsync()
         {
             var alumnos = await (
                 from a in _context.Alumnos
