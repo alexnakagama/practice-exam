@@ -23,4 +23,8 @@
     <Folder Include="EF\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Alumno.Abstractions\Alumno.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>
