@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Alumnos.Core.Service
 {
-    public class AlumnosService(IAlumnosRepository _repository)
+    public class AlumnosService(IAlumnosRepository _repository) : IAlumnosService
     {
         public async Task<List<AlumnoDTO>> GetAllAlumnosAsync()
         {

@@ -1,4 +1,5 @@
 ﻿using Alumno.Abstractions.DTO;
+using Alumno.Abstractions.Interface;
 using Alumnos.Data.EF;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -12,7 +13,7 @@ using AlumnoEntity = Alumnos.Data.EF.Alumno;
 namespace Alumnos.Data.Repositories
 {
     // dependency injection, it injects the context of the db
-    public class AlumnoRepository(AlumnosDBContext _context)
+    public class AlumnoRepository(AlumnosDBContext _context) : IAlumnosRepository
     {
         public async Task<List<AlumnoDTO>> GetAllAlumnosAsync()
         {

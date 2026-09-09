@@ -23,4 +23,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Alumno.Abstractions\Alumno.Abstractions.csproj" />
+    <ProjectReference Include="..\Alumnos.Core\Alumnos.Core.csproj" />
+  </ItemGroup>
+
 </Project>
