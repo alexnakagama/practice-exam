@@ -23,7 +23,7 @@ namespace Alumnos.Data.Repositories
                     Surname = a.Surname,
                     Age = a.Age,
                 }
-                ).ToListAsync();
+            ).ToListAsync();
 
             return alumnos;
         }
