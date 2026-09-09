@@ -11,9 +11,10 @@ using AlumnoEntity = Alumnos.Data.EF.Alumno;
 
 namespace Alumnos.Data.Repositories
 {
+    // dependency injection, it injects the context of the db
     public class AlumnoRepository(AlumnosDBContext _context)
     {
-        public async Task <List<AlumnoDTO>> GetAllAlumnosAsync()
+        public async Task<List<AlumnoDTO>> GetAllAlumnosAsync()
         {
             var alumnos = await (
                 from a in _context.Alumnos

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Alumno.Abstractions\Alumno.Abstractions.csproj" />
+    <ProjectReference Include="..\Alumnos.Data\Alumnos.Data.csproj" />
   </ItemGroup>
 
 </Project>
